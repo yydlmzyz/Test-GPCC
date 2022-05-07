@@ -1,6 +1,8 @@
 This is a python script to test G-PCC.
 
 ## usage
+chmod 777 tmc3 pc_error_d
+
 python test_gpcc.py --dataset='./testdata/'
 
 ### Dataset 
