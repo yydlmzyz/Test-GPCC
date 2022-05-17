@@ -1,12 +1,14 @@
 This is a python script to test G-PCC. Now we only test KITTI sequences.
 
 ## usage
+```shell
 chmod 777 tmc3 pc_error_d
 
 python test_kitti.py --dataset='./testdata/' --mode='lossless' --prefix='lossless'
 python test_kitti.py --dataset='./testdata/' --mode='lossy' --prefix='lossy'
 python test_kitti.py --dataset='./testdata/' --mode='lossy' --test_d2 --prefix='lossy'
-
+python test_kitti.py --dataset='./testdata/' --mode='lossy' --quant_mode='resolution' --test_d2 --prefix='lossy_q16bit'
+```
 
 ### Quantization
 
@@ -22,6 +24,7 @@ Details can be found in `gpcc.py` and `encoder.cfg`
 
 ### pc error
 We set resolution to 30000, following the settings for Ford squences in G-PCC CTC.
+
 Details can be found in `pc_error.py`
 
 ## Update
